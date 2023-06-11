@@ -1,0 +1,202 @@
+#userInput {
+    float: right;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+    width:130%;
+    border:1px solid lightgray;
+}
+
+@media all and (max-width:997px){
+
+    p {
+        font-size: 1.2rem !important;
+    }
+    a {
+        font-size: 1.2rem;
+    }
+    #quickFindText {
+        font-size: 1.4rem;
+    }
+    #card {
+        min-height: 390px !important;
+      }
+    .header {
+        display:none;
+    }
+    #firstrow{
+        margin-top:125px;
+    }
+    #carouselExampleControls{
+        margin-top:125px;
+    }
+    .headermobile {
+        position: fixed;
+        top:0px;
+        width: 100%;
+        z-index:998;
+
+
+
+    }
+    .hidden{
+        display:none;
+        }
+    .headermobile nav{
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        color: white;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    .headermobile nav ul {
+        list-style-type: none;
+        text-decoration: none;
+
+    }
+
+    .menu li {
+        display:bloc;
+        width:100%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .menu li a{
+        display:block;
+        text-align: center;
+        width:100%;
+    }
+    .menu{
+        display:flex;
+        position:fixed;
+        flex-wrap:wrap;
+        align-content: center;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:0;
+        background-color: rgba(0,0,0,0.7);
+        overflow:hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+
+    }
+    .menu-icon{
+        display:block;
+        color:white;
+        width:50px;
+        height:inherit;
+        position:absolute;
+        top:30px;
+        right:8px;
+        line-height:60px;
+        z-index:999;
+    }
+    .menu-icon i {
+        font-size: 1.8em;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2){
+        display: block;
+    }
+    #menuToggle:checked ~ label i:first-child{
+        display: none;
+    }
+    #menuToggle:not(checked) ~ label
+    i:first-child{
+        display:block;
+    }
+    #menuToggle:not(checked) ~ label
+    i:nth-child(2){
+        display:none;
+    }
+    #menuToggle:checked ~ ul{
+        height:100vh;
+
+    }
+    #rowfooter{
+        display:block;
+    }
+  }
+  @media screen and (min-width:768px){
+    #rowfooter{
+        display: flex;
+    }
+  }
+  @media screen and (min-width:998px){
+    .headermobile{
+        display:none;
+    }
+    #firstrow{
+        margin-top:20px;
+    }
+    #carouselExampleControls{
+        margin-top:20px;
+    }
+
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1199px){
+
+
+    p {
+        font-size:0.9rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width:1424px){
+
+    *{
+        font-size:0.9rem;
+    }
+    p {
+        font-size:0.9rem;
+    }
+
+}
+
+@media only screen and (min-width: 1425px) {
+
+    *{
+        font-size:1.05rem;
+    }
+    p {
+        font-size:1.05rem;
+    }
+    #demo.carousel img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-inner{
+        width:100%;
+        max-height: 1500px !important;
+      }
+
+}
+
+.fill {
+    width: 100%;
+    height: 100%!important;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+
+
+
+#card {
+  min-height: 390px ;
+}
